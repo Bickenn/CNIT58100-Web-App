@@ -91,10 +91,10 @@ function drawSnake(){
 };
 function changeDirection(event){ //updates the snake and lets the snake turn
     const keyPressed = event.keyCode; //saves the key presses as a number
-    const LEFT = 37;
-    const UP = 38;
-    const RIGHT = 39;
-    const DOWN = 40;
+    const LEFT = 65;
+    const UP = 87;
+    const RIGHT = 68;
+    const DOWN = 83;
 
     const goingUp = (yVelocity == -unitSize); //sets the y velocity to negative so that the snake goes up
     const goingDown = (yVelocity == unitSize); //sets the y velocity to positive so that the snake goes down

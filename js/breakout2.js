@@ -95,7 +95,7 @@ function update() {
     else if (ball.y + ball.height >= boardHeight){
         //end the game
         context.font = "20px sans serif";
-        context.fillText("Game Over: Press 'Space' to Restart", 80, 400);
+        context.fillText("Game Over: Press 'R' to Restart", 80, 400);
         gameOver = true;
 
     }
@@ -141,7 +141,7 @@ function outOfBounds(xPosition) { //checks to see if the paddle is out of bounds
 
 function movePlayer(e){ //function to move the paddle
     if(gameOver) { //checks to see if the game is over
-        if(e.code == "Space") { //checks to see if spacebar is entered
+        if(e.code == "KeyR") { //checks to see if spacebar is entered
             resetGame();
         }
     }
